@@ -1,0 +1,54 @@
+library(shiny)
+
+library(dplyr)
+
+library(leaflet)
+
+library(DT)
+
+
+
+server <- shinyServer(function(input, output) {
+  # Import Data and clean it
+  
+  bb_data <- bb_data
+  bb_data <- data.frame(bb_data)
+  bb_data$LATITUDINE <-  as.numeric(bb_data$LATITUDINE)
+  bb_data$LONGITUDINE <-  as.numeric(bb_data$LONGITUDINE)
+  bb_data=filter(bb_data, LATITUDINE != "NA") # removing NA values
+  
+  
+  # new column for the popup label
+  
+  bb_data <- mutate(bb_data, cntnt=paste0('<strong>Nome: </strong>',DESCRIZIONEFARMACIA,
+                                          '<br><strong>indirizzo:</strong> ', INDIRIZZO,
+                                          '<br><strong>CAP:</strong> ', CAP,
+                                          '<br><strong>Regione:</strong> ',DESCRIZIONEREGIONE,
+                                          '<br><strong>Comune:</strong> ',DESCRIZIONECOMUNE,
+                                          '<br><strong>Provincia:</strong> ',SIGLAPROVINCIA,
+                                          '<br><strong>Cod.identificativo:</strong> ',CODICEIDENTIFICATIVOFARMACIA)) 
+  
+  # create a color paletter for category type in the data file
+  
+  pal <- colorFactor(pal = c("orange", "yellow", "green"), domain = c("test_rapido", "test_molecolare", "Entrambi"))
+  
+  # create the leaflet map  
+  output$bbmap <- renderLeaflet({
+    leaflet(bb_data) %>% 
+      addCircles(lng = ~LONGITUDINE, lat = ~LATITUDINE) %>% 
+      addTiles() %>%
+      addCircleMarkers(data = bb_data, lat =  ~LATITUDINE, lng =~LONGITUDINE, 
+                       radius = 3, popup = ~as.character(cntnt), 
+                       color = ~pal(tipo_test),
+                       stroke = FALSE, fillOpacity = 0.8)%>%
+      addLegend(pal=pal, values=bb_data$tipo_test,opacity=1, na.label = "Not Available")%>%
+      addEasyButton(easyButton(
+        icon="fa-crosshairs", title="ME",
+        onClick=JS("function(btn, map){ map.locate({setView: true}); }")))
+  })
+})
+
+ui <- navbarPage("Location farmacie per tamponi", id="main",
+           tabPanel("Mappa", leafletOutput("bbmap", height=1000)))
+
+shinyApp(ui, server)
