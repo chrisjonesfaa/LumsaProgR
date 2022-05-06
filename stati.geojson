@@ -1,0 +1,236 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.39844,42.35122 ]
+    },
+    "properties": {
+    "name":"Abruzzo",
+    "deceduti":252
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 15.80515,40.63947 ]
+    },
+    "properties": {
+    "name":"Basilicata",
+    "deceduti":163
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 16.5944,38.90598 ]
+    },
+    "properties": {
+    "name":"Calabria",
+    "deceduti":135
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.25085,40.83957 ]
+    },
+    "properties": {
+    "name":"Campania",
+    "deceduti":183
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.34172,44.49437 ]
+    },
+    "properties": {
+    "name":"Emilia-Romagna",
+    "deceduti":376
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.76814,45.64944 ]
+    },
+    "properties": {
+    "name":"Friuli_Venezia_Giulia",
+    "deceduti":418
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.48367,41.89277 ]
+    },
+    "properties": {
+    "name":"Lazio",
+    "deceduti":194
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.932699,44.41149 ]
+    },
+    "properties": {
+    "name":"Liguria",
+    "deceduti":348
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.190347,45.46679 ]
+    },
+    "properties": {
+    "name":"Lombardia",
+    "deceduti":401
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.51888,43.61676 ]
+    },
+    "properties": {
+    "name":"Marche",
+    "deceduti":257
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.65916,41.55775 ]
+    },
+    "properties": {
+    "name":"Molise",
+    "deceduti":210
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.35662,46.49933 ]
+    },
+    "properties": {
+    "name":"P.A. Bolzano",
+    "deceduti":281
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.12123,46.06894 ]
+    },
+    "properties": {
+    "name":"P.A. Trento",
+    "deceduti":289
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.680687,45.07327 ]
+    },
+    "properties": {
+    "name":"Piemonte",
+    "deceduti":312
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 16.86737,41.1256 ]
+    },
+    "properties": {
+    "name":"Puglia",
+    "deceduti":211
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.110616,39.21531 ]
+    },
+    "properties": {
+    "name":"Sardegna",
+    "deceduti":148
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.36236,38.1157 ]
+    },
+    "properties": {
+    "name":"Sicilia",
+    "deceduti":220
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.25589,43.76923 ]
+    },
+    "properties": {
+    "name":"Toscana",
+    "deceduti":268
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.38825,43.10676 ]
+    },
+    "properties": {
+    "name":"Umbria",
+    "deceduti":212
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.320149,45.7375 ]
+    },
+    "properties": {
+    "name":"Valle dAosta",
+    "deceduti":429
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.33845,45.4349 ]
+    },
+    "properties": {
+    "name":"Veneto",
+    "deceduti":297
+    }
+  }
+]
+}
